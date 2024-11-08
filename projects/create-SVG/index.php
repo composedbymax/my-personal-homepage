@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/projects/svg-editor.css">
 </head>
 <body>
-  <?php include '../..//nav.php'; ?>
+  <?php include '../../nav.php'; ?>
 
   <div class="container">
     <div class="header">

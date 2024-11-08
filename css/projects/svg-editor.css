@@ -2,7 +2,8 @@
 body {
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
-  background: #f0f2f5;
+  background: var(--primary-dark);
+  color: var(--text-primary);
   padding-top: 60px;
 }
 .container {

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inteliuz | STFT</title>
-    <link rel="stylesheet" href="/css/create/stft.css">
+    <link rel="stylesheet" href="/css/projects/stft.css">
 </head>
 <body>
-    <?php include '../nav.php'; ?>
+    <?php include '../../nav.php'; ?>
     <div id="container">
         <div id="visualizer"></div>
         <div id="controls">
@@ -19,6 +19,7 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="/js/create/stft.js" defer></script>
+    <script src="/js/projects/stft.js" defer></script>
+    <?php include '../../foot.php'; ?>
 </body>
 </html>

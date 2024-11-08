@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inteliuz | Vizzy</title>
-    <link rel="stylesheet" href="/css/create/viz.css">
+    <link rel="stylesheet" href="/css/projects/viz.css">
 </head>
 <body class="main-body">
-    <?php include '../nav.php'; ?>
+    <?php include '../../nav.php'; ?>
     <div class="container">
         <div class="grid">
             <div class="upload-section">
@@ -48,6 +48,6 @@
         <canvas id="canvas" class="canvas"></canvas>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
-    <script src="/js/create/viz.js" defer></script>
+    <script src="/js/projects/viz.js" defer></script>
 </body>
 </html>

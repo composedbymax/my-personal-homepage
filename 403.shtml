@@ -1,257 +1,78 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<HTML><HEAD>
-<TITLE>403 Forbidden</TITLE>
-</HEAD><BODY>
-<H1>Forbidden</H1>
-You don't have permission to access <!--#echo var="REQUEST_URI" --> on this server.
-<HR>
-<I><!--#echo var="HTTP_HOST" --></I>
-</BODY></HTML>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>403 Forbidden</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <style>
+        body {
+            background: var(--gradient-dark);
+            color: var(--text-primary);
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .error-container {
+            background-color: var(--card-dark);
+            box-shadow: var(--card-shadow);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            transition: var(--transition-smooth);
+        }
+
+        h1 {
+            color: var(--neon-blue);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin: 1rem 0;
+        }
+
+        a {
+            color: var(--neon-blue);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: var(--primary-dark);
+            border-radius: var(--border-radius);
+            box-shadow: 0 0 8px var(--neon-blue-glow);
+            transition: var(--transition-smooth);
+        }
+
+        a:hover {
+            background: var(--neon-blue);
+            color: var(--primary-dark);
+            box-shadow: 0 0 12px var(--neon-blue);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--text-secondary);
+            margin: 1.5rem 0;
+        }
+
+        i {
+            color: var(--text-secondary);
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>403 - Forbidden</h1>
+        <p>You don't have permission to access <!--#echo var="REQUEST_URI" --> on this server.</p>
+        <hr>
+        <i><!--#echo var="HTTP_HOST" --></i>
+        <p><a href="/index">Return to Home Page</a></p>
+    </div>
+</body>
+</html>

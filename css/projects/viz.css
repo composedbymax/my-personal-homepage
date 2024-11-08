@@ -1,19 +1,19 @@
 /* Main Body */
 .main-body {
-    background-color: var(--background);
+    background-color: var(--primary-dark);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    margin-top: 80px;
+    color: var(--text-primary)
 }
 
 /* Container */
 .container {
     width: 100%;
     max-width: 64rem;
-    background-color: var(--container-background);
+    background-color: var(--secondary-dark);
     border-radius: var(--border-radius);
     padding: 1rem;
     margin-bottom: 2rem;
