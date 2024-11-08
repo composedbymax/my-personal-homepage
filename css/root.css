@@ -1,0 +1,13 @@
+:root {
+    --primary-dark: #101010;
+    --secondary-dark: #262626;
+    --card-dark: #1a1a1a;
+    --neon-blue: #00f3ff;
+    --neon-blue-glow: rgba(0, 243, 255, 0.15);
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --gradient-dark: linear-gradient(145deg, var(--secondary-dark), var(--primary-dark));
+    --border-radius: 12px;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

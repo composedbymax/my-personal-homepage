@@ -1,0 +1,77 @@
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    margin-top: 8rem;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--neon-blue);
+    text-align: center;
+}
+
+#brightness-label {
+    margin-top: 10px;
+}
+
+.button {
+    border: 2px solid var(--neon-blue-glow);
+    color: var(--neon-blue);
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+    background: none;
+}
+
+.button:hover {
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+    box-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue-glow);
+}
+
+#downloadAll {
+    display: none;
+}
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.output-image {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 1px solid var(--neon-blue-glow);
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+}
+
+.output-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+}
+
+#loading {
+    display: none;
+    font-size: 1.2em;
+    color: var(--text-primary);
+    margin-top: 10px;
+    text-align: center;
+}
+
+input[type="file"],
+input[type="number"],
+input[type="range"] {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--neon-blue);
+    color: var(--text-primary);
+    background-color: var(---secondary-dark);
+}

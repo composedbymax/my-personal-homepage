@@ -1,0 +1,173 @@
+/* Main Body */
+.main-body {
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 80px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 64rem;
+    background-color: var(--container-background);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Section Title */
+.section-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+/* Input Label */
+.input-label {
+    display: block;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Input Field */
+.custom-file-input {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+}
+
+.input-field {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/* File Label */
+.file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-primary);
+    background-color: #2d2d2d;
+    /* Dark background for file label */
+    border: 2px solid var(--neon-blue);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.file-label:hover {
+    background-color: #444444;
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 8px var(--neon-blue);
+}
+
+.file-label:active {
+    background-color: #555555;
+    box-shadow: 0 0 5px var(--neon-blue);
+}
+
+/* Dropdown */
+.dropdown {
+    width: 100%;
+    background-color: var(--container-background);
+    color: var(--text-primary);
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Button Styles */
+.btn {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    /* White text for buttons */
+    border-radius: 0.375rem;
+    transition: background-color 0.2s ease;
+    background-color: #2d2d2d;
+    /* Dark background for buttons */
+    border: 2px solid var(--neon-blue);
+    /* Same border for consistency */
+}
+
+.start-btn {
+    background-color: #065f46;
+    /* Dark teal */
+}
+
+.start-btn:hover {
+    background-color: #047857;
+    /* Lighter teal on hover */
+}
+
+.stop-btn {
+    background-color: #7f1d1d;
+    /* Dark red */
+}
+
+.stop-btn:hover {
+    background-color: #b91c1c;
+    /* Lighter red on hover */
+}
+
+/* Canvas Container */
+.canvas-container {
+    position: relative;
+    width: 100%;
+    max-width: 64rem;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Aspect Ratios */
+.canvas-container.aspect-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.canvas-container.aspect-9-16 {
+    aspect-ratio: 9 / 16;
+}
+
+/* Canvas */
+.canvas {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
